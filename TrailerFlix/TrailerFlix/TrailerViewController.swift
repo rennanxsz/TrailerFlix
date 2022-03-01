@@ -17,11 +17,30 @@ class TrailerViewController: UIViewController {
     @IBOutlet weak var viTrailer: UIView!
     
     var trailer: Trailer!
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       prepareView()
+       preparePlayer()
+    }
+    
+    func prepareView() {
+        lbTitle.text = trailer.title
+        lbYear.text = "\(trailer.year)"
+        var rating = "Ainda não avaliado"
+        if trailer.rating > 0 {
+            rating = ""
+            for _ in 1...trailer.rating {
+                rating += "✮"
+            }
+        }
+        lbRating.text = rating
+        ivTrailer.image = UIImage(named: trailer.poster + "-large")
+    }
+    
+    func preparePlayer() {
+        
     }
     
     @IBAction func close(_ sender: UIButton) {
