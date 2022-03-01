@@ -15,6 +15,7 @@
 		00DD6D7227CC557500DB41B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DD6D7027CC557500DB41B8 /* LaunchScreen.storyboard */; };
 		00DD6D7A27CC564500DB41B8 /* trailers.json in Resources */ = {isa = PBXBuildFile; fileRef = 00DD6D7927CC564500DB41B8 /* trailers.json */; };
 		00DD6D7C27CC6A5200DB41B8 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DD6D7B27CC6A5200DB41B8 /* TrailerViewController.swift */; };
+		00E4A4CB27CD9C140006DE63 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4A4CA27CD9C140006DE63 /* Trailer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		00DD6D7327CC557500DB41B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00DD6D7927CC564500DB41B8 /* trailers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = trailers.json; path = "../../../../../Downloads/Arquivos TrailerFlix/trailers.json"; sourceTree = "<group>"; };
 		00DD6D7B27CC6A5200DB41B8 /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
+		00E4A4CA27CD9C140006DE63 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				00DD6D7927CC564500DB41B8 /* trailers.json */,
 				00DD6D6727CC557300DB41B8 /* SceneDelegate.swift */,
 				00DD6D6927CC557300DB41B8 /* ViewController.swift */,
+				00E4A4CA27CD9C140006DE63 /* Trailer.swift */,
 				00DD6D6B27CC557300DB41B8 /* Main.storyboard */,
 				00DD6D7B27CC6A5200DB41B8 /* TrailerViewController.swift */,
 				00DD6D6E27CC557500DB41B8 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00DD6D7C27CC6A5200DB41B8 /* TrailerViewController.swift in Sources */,
+				00E4A4CB27CD9C140006DE63 /* Trailer.swift in Sources */,
 				00DD6D6A27CC557300DB41B8 /* ViewController.swift in Sources */,
 				00DD6D6627CC557300DB41B8 /* AppDelegate.swift in Sources */,
 				00DD6D6827CC557300DB41B8 /* SceneDelegate.swift in Sources */,

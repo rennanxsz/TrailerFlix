@@ -16,6 +16,7 @@ class TrailerViewController: UIViewController {
     @IBOutlet weak var lbRating: UILabel!
     @IBOutlet weak var viTrailer: UIView!
     
+    var trailer: Trailer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
