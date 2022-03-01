@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class TrailerViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class TrailerViewController: UIViewController {
     @IBOutlet weak var viTrailer: UIView!
     
     var trailer: Trailer!
+    var player: AVPlayer!
+    var playerContoller: AVPlayerViewController!
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +43,14 @@ class TrailerViewController: UIViewController {
     }
     
     func preparePlayer() {
-        
+        let url = URL(fileURLWithPath: trailer.url)
+        player = AVPlayer(url: url)
+        playerContoller = AVPlayerViewController()
+        playerContoller.player = player
+        playerContoller.showsPlaybackControls = true
+        playerContoller.player?.play()
+        playerContoller.view.frame = viTrailer.bounds
+        viTrailer.addSubview(playerContoller.view)
     }
     
     @IBAction func close(_ sender: UIButton) {
